@@ -1,0 +1,168 @@
+.communities-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.summary-box {
+  padding: 14px 16px;
+  border: 1px solid #eeeaf1;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.summary-box span {
+  color: #928b99;
+  font-size: 9px;
+}
+
+.summary-box b {
+  display: block;
+  margin-top: 8px;
+  color: #2b2533;
+  font-size: 20px;
+  letter-spacing: -0.7px;
+}
+
+.summary-box small {
+  margin-left: 6px;
+  color: #48a878;
+  font-size: 8px;
+}
+
+.filters-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 11px;
+  border: 1px solid #eeeaf1;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.search-box svg {
+  width: 13px;
+  height: 13px;
+  stroke: #a39baa;
+  stroke-width: 1.6;
+  fill: none;
+}
+
+.search-box input {
+  width: 150px;
+  border: 0;
+  outline: 0;
+  color: #4b4453;
+  font-size: 9px;
+}
+
+.search-box input::placeholder {
+  color: #aaa4b0;
+}
+
+.sort-select {
+  padding: 9px 10px;
+  border: 1px solid #eeeaf1;
+  border-radius: 8px;
+  background: #fff;
+  color: #7b7482;
+  font-size: 9px;
+}
+
+.community-table {
+  margin-top: 12px;
+}
+
+.community-table .data-table tbody td {
+  padding-block: 13px;
+}
+
+.engagement {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.engagement-track {
+  width: 45px;
+  height: 4px;
+  border-radius: 4px;
+  background: #f0edf3;
+}
+
+.engagement-track i {
+  display: block;
+  height: 4px;
+  border-radius: 4px;
+  background: #a987f7;
+}
+
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  color: #928b99;
+  font-size: 11px;
+}
+
+@media (max-width: 560px) {
+  .communities-summary {
+    gap: 7px;
+  }
+  .summary-box {
+    padding: 12px 10px;
+  }
+  .summary-box span {
+    font-size: 8px;
+  }
+  .summary-box b {
+    font-size: 17px;
+  }
+  .filters-row {
+    width: 100%;
+  }
+  .search-box {
+    flex: 1;
+  }
+  .search-box input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .community-table {
+    margin-inline: -15px;
+  }
+  .community-table .data-table {
+    min-width: 710px;
+  }
+}
+
+.community-table-panel {
+  margin-bottom: 0;
+  padding: 17px 17px 0;
+}
+
+.community-table-panel__heading {
+  margin-bottom: 12px;
+}
+
+.highlight-card {
+  padding: 17px;
+}
+
+@media (max-width: 560px) {
+  .community-table-panel {
+    padding: 14px 14px 0;
+  }
+
+  .community-table-panel__heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
